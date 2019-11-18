@@ -7,13 +7,17 @@
     }
     
     body{
-        background:$black;
+        background: url(../img/back.jpg);
         display: flex;
     }
 
     a{
-        text-decoration: none;
+        text-decoration: underline;
         color: $black;
+        &:hove{
+            text-decoration: none;
+            color: $red;
+        }
     }
 
     p{
@@ -37,8 +41,8 @@
     }
 
     h2{
-        color: $light;
-        position: absolute;
+        color: $red;
+        position: relative;
         left: 10%;
         top: 18%;
         font-size: 1em;
@@ -48,20 +52,21 @@
 
     .summary{
         left: 10%;
-        width: 40%;
         top: 30%;
         color: $light;
+        background-color: $clear;
         @include cases();
+        border: $black solid;
     }
 
     h3{
         color: $red;
+
     }
 
     .preamble{
         @include cases();
         left: 10%;
-        width: 40%;
         top: 50%;
         color: $light;
     }
@@ -74,7 +79,7 @@
     }
 
     li{
-        color: $color4;
+        color: $black;
         list-style: none;
         color: $black;
     }
@@ -86,39 +91,36 @@
 
     .participation{
         @include cases ();
-        width: 70%;
-        top: 122%;
+        top: 120%;
     }
 
     .benefits{
         @include cases ();
-        width: 70%;
-        top: 158%;
+        top: 160%;
     }
     .requirements{
         @include cases();
-        width: 70%;
         top: 182%;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
 
         
     }
 
     footer{
         @include bdp ();
-        width: 11%;
         top: 90%;
         right: 5%;
+        border: $black solid;
     }
 
 
 
     .select{
-        color: $color3;
+        color: $red;
     }
     .archives{
-        color: $color3;
+        color: $red;
     }
     .resources{
-        color: $color3;
+        color: $red;
     }
