@@ -1,0 +1,124 @@
+@import "variable.scss";
+@import "mixin.scss";
+
+
+    html{
+        letter-spacing: 2px;
+    }
+    
+    body{
+        background:$black;
+        display: flex;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+
+    p{
+        color: $black;
+    }
+
+    abbr{
+        text-decoration: unset !important ;
+    }
+
+    h1{
+        @include cases();
+        color: $red;
+        left: 10%;
+        top: 5%;
+        font-size: 3em;
+        background: $light;
+        width: 23%;
+        box-shadow: 0px 0px 78px -45px rgba(0,0,0,1);
+
+    }
+
+    h2{
+        color: $light;
+        position: absolute;
+        left: 10%;
+        top: 18%;
+        font-size: 1em;
+        font-weight: 100;
+        
+    }
+
+    .summary{
+        left: 10%;
+        width: 40%;
+        top: 30%;
+        color: $light;
+        @include cases();
+    }
+
+    h3{
+        color: $red;
+    }
+
+    .preamble{
+        @include cases();
+        left: 10%;
+        width: 40%;
+        top: 50%;
+        color: $light;
+    }
+
+
+    .wrapper{
+        @include sidebar();
+        top: 30%;
+        right: 5%;
+    }
+
+    li{
+        color: $color4;
+        list-style: none;
+        color: $black;
+    }
+
+    .explanation{
+        @include cases ();
+        top: 84%;
+    }
+
+    .participation{
+        @include cases ();
+        width: 70%;
+        top: 122%;
+    }
+
+    .benefits{
+        @include cases ();
+        width: 70%;
+        top: 158%;
+    }
+    .requirements{
+        @include cases();
+        width: 70%;
+        top: 182%;
+        margin-bottom: 70px;
+
+        
+    }
+
+    footer{
+        @include bdp ();
+        width: 11%;
+        top: 90%;
+        right: 5%;
+    }
+
+
+
+    .select{
+        color: $color3;
+    }
+    .archives{
+        color: $color3;
+    }
+    .resources{
+        color: $color3;
+    }

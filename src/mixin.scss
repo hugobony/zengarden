@@ -1,0 +1,25 @@
+@mixin cases {
+    position: absolute;
+    padding: 20px;
+    background: $light;
+    left: 10%;
+    width: 40%;
+    
+    
+
+}
+
+@mixin sidebar {
+    position: absolute;
+    padding: 20px;
+    background: $light;
+   
+
+}
+
+@mixin bdp {
+    position: absolute;
+    padding: 20px;
+    background: $light;
+    
+}
